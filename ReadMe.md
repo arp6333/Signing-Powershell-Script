@@ -8,11 +8,11 @@
     where /R "C:\Program Files (x86)\Windows Kits" makecert.*
     ```
 
-2. Create Local Certificate Root, where -makecert location- is the full path of any of the makecert.exe locations from step 1 (also command line).
+2. Create Local Certificate Root, where -makecert location- is the full path of any of the makecert.exe locations from Step 1 (also command line).
     ``` powershell
     "-makecert location-" -n "CN=PowerShell Local Certificate Root" -a sha1 -eku 1.3.6.1.5.5.7.3.3 -r -sv root.pvk root.cer -ss Root -sr localMachine
     ```
-    Give desired password.
+    Choose a password to use.
 
 3. Windows Key + R -> Run 'mmc' to open the Microsoft Management Console
 
@@ -28,7 +28,7 @@
     ``` powershell
     "-makecert location-" -pe -n "CN=-custom name-" -ss MY -a sha1 -eku 1.3.6.1.5.5.7.3.3 -iv root.pvk -ic root.cer
     ```
-    Give password entered from step 2.
+    Enter password chosen in Step 2.
 
 ## Signing a Powershell Script with the Certificate
 
@@ -61,4 +61,4 @@
    
    6. Finish
 
-4. Certificate can now be imported just by doubling clicking.
+4. Certificate can now be send to anyone and imported on their machine just by doubling clicking.
