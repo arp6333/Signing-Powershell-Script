@@ -14,13 +14,13 @@
     ```
     Choose a password to use.
 
-3. Windows Key + R -> Run 'mmc' to open the Microsoft Management Console
+3. Windows Key + R -> Run 'mmc' to open the Microsoft Management Console.
 
-4. File -> Add/Remove Snap-in
+4. File -> Add/Remove Snap-in.
 
-5. Certificates -> Add
+5. Certificates -> Add.
 
-6. Select 'My user account' and then finish.
+6. Select 'My user account' -> Finish.
 
 7. Click 'Okay'.
 
@@ -30,13 +30,13 @@
     ```
     Enter password chosen in Step 2.
 
-## Signing a Powershell Script with the Certificate
+## Signing a Powershell Script with the Certificate:
 
 1. In Powershell, run 2 commands, where -path to script- is the path to the script that needs the certificate: 
    
     ``` powershell
     $acert = (dir Cert:\CurrentUser\My -CodeSigningCert)[0]
-    Set-AuthenticodeSignature -path to script-.ps1 -Certificate $acert 
+    Set-AuthenticodeSignature -path to script- -Certificate $acert 
     ```
 
 2. This will append a signature block to the end of the given script. If outside changes to the script are made, the 'Set-AuthenticodeSignature' command will have to be run again.
@@ -47,17 +47,17 @@
 
 2. Right click the certificate to export and select "All Tasks" -> "Export".
 
-3. In the Wizard: 
+3. In the Exporting Wizard: 
    
    1. Next
    
-   2. Choose 'Yes, export the private key', Next
+   2. Choose 'Yes, export the private key' -> Next
    
-   3. Use default options, Next
+   3. Next (use the default options)
    
-   4. Choose 'Password' and enter a password for users to use when importing the certificate, Next
+   4. Choose 'Password' -> Enter a password for users to use when importing the certificate -> Next
    
-   5. Save the certificate, Next
+   5. Save the certificate -> Next
    
    6. Finish
 
