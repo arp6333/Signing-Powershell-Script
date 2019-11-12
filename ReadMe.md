@@ -18,7 +18,7 @@
 
 4. File -> Add/Remove Snap-in
 
-5. Certificates -> Add >
+5. Certificates -> Add
 
 6. Select 'My user account' and then finish.
 
@@ -45,7 +45,7 @@
 
 1. In Microsoft Management Console from 'Making a Certificate', expand the 'Personal' folder and enter 'Certificates'.
 
-2. Right click the certificate to export and select "All Tasks" - > "Export".
+2. Right click the certificate to export and select "All Tasks" -> "Export".
 
 3. In the Wizard: 
    
@@ -61,4 +61,4 @@
    
    6. Finish
 
-4. Certificate can now be send to anyone and imported on their machine just by doubling clicking.
+4. Certificate can now be sent to anyone and imported on their machine just by doubling clicking.
