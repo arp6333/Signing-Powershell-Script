@@ -24,7 +24,7 @@
 
 7. Click 'Okay'.
 
-8. Create Personal Certificate, where -custom name- is any name you want to show as the owner of this certificate / any scripts signed with it (command line).
+8. Create Personal Certificate, where -custom name- is any name you want to show as the owner of this certificate / any scripts signed with it and -makecert location- is the full path of any of the makecert.exe locations from Step 1 (command line).
     ``` powershell
     "-makecert location-" -pe -n "CN=-custom name-" -ss MY -a sha1 -eku 1.3.6.1.5.5.7.3.3 -iv root.pvk -ic root.cer
     ```
@@ -61,4 +61,4 @@
    
    6. Finish
 
-4. Certificate can now be sent to anyone and imported on their machine just by doubling clicking.
+4. Certificate can now be sent to anyone and imported on their machine just by double clicking.
